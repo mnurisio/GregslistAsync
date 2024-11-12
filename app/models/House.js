@@ -45,7 +45,9 @@ export class House {
     get DeleteButton() {
         if (AppState.account != null && AppState.account.id == this.creatorId) {
             return `
-      <button onclick="app.HouseController.deleteHouse('${this.id}')" class="btn btn-danger w-100 mt-2" title="Delete House"><i class="mdi mdi-delete-forever"></i></button>`
+<button onclick="app.HouseController.deleteHouse('${this.id}')" class="btn btn-danger w-100 mt-2"
+    title="Delete House"><i class="mdi mdi-delete-forever"></i></button>
+`
         }
         return ''
     }
