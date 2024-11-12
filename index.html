@@ -51,62 +51,47 @@
 
 
     <!-- STUB Cars Form -->
-    <form id="create-car-form" onsubmit="app.CarsController.postCar()"
+    <form id="create-house-form" onsubmit="app.HouseController.postHouse()"
       class="d-none row bg-white rounded p-3 shadow-sm my-3 g-3">
       <div>
-        <h2>List Your Car</h2>
+        <h2>List Your House</h2>
       </div>
       <div class="col-md-4">
-        <label for="car-make">Make</label>
-        <input required id="car-make" name="make" type="text" minlength="2" maxlength="25" class="form-control">
+        <label for="house-bedrooms">Bedrooms</label>
+        <input required id="house-bedrooms" name="bedrooms" type="text" minlength="1" maxlength="25" class="form-control">
       </div>
       <div class="col-md-4">
-        <label for="car-model">Model</label>
-        <input required id="car-model" name="model" type="text" minlength="1" , maxlength="25" class="form-control">
+        <label for="house-bathrooms">Bathrooms</label>
+        <input required id="house-bathrooms" name="bathrooms" type="text" minlength="1" , maxlength="25" class="form-control">
       </div>
       <div class="col-md-4">
-        <label for="car-year">Year</label>
-        <input required id="car-year" name="year" type="number" min="1885" max="2025" class="form-control">
+        <label for="house-levels">Levels</label>
+        <input required id="house-levels" name="levels" type="text" minlength="1" , maxlength="25" class="form-control">
       </div>
       <div class="col-md-4">
-        <label for="car-price">Price</label>
-        <input required id="car-price" name="price" type="number" min="1" max="10000000000" class="form-control">
+        <label for="house-year">Year</label>
+        <input required id="house-year" name="year" type="number" min="1" max="2025" class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label for="house-price">Price</label>
+        <input required id="house-price" name="price" type="number" min="1" max="10000000000" class="form-control">
       </div>
       <div class="col-md-6">
-        <label for="car-imgUrl">Picture</label>
-        <input required id="car-imgUrl" name="imgUrl" type="url" class="form-control">
-      </div>
-      <div class="col-md-4">
-        <label for="car-color">Color</label>
-        <input required id="car-color" name="color" type="color" class="form-control">
-      </div>
-      <div class="col-md-4">
-        <label for="car-engineType">Engine</label>
-        <select name="engineType" id="car-engineType" required class="form-control">
-          <option value="2 stroke">2 stroke</option>
-          <option value="4 cylinder">4 cylinder</option>
-          <option value="v6">v6</option>
-          <option value="v8">v8</option>
-          <option value="v10">v10</option>
-          <option value="v12">v12</option>
-          <option value="small">small</option>
-          <option value="medium">medium</option>
-          <option value="large">large</option>
-          <option value="chuncko">chuncko</option>
-        </select>
+        <label for="house-imgUrl">Picture</label>
+        <input required id="house-imgUrl" name="imgUrl" type="url" class="form-control">
       </div>
       <div class="col-12">
-        <label for="car-description">Description</label>
-        <textarea name="description" id="car-description" class="form-control" rows="3"></textarea>
+        <label for="house-description">Description</label>
+        <textarea name="description" id="house-description" class="form-control" rows="3"></textarea>
       </div>
       <div class="text-end mt-3">
-        <button class="btn btn-primary px-4">Submit <i class="mdi mdi-plust"></i></button>
+        <button class="btn btn-primary px-4">Submit <i class="mdi mdi-plus-thick"></i></button>
       </div>
     </form>
     <!-- STUB Cars listings -->
-    <h1>Wanna Buy A Car?</h1>
+    <h1>Wanna Buy A Crib?</h1>
     <hr>
-    <section id="car-listings" class="row g-3">
+    <section id="house-listings" class="row g-3">
 
     </section>
 
